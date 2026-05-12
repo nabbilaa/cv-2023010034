@@ -74,8 +74,10 @@ export default function Profile() {
           onPress={() => router.push('/pendidikan')}
         >
           <Ionicons name="school" size={20} color="white" />
-          <Text style={styles.navText}>Pendidikan</Text>
-        </TouchableOpacity>
+          <Text style={styles.smallNavText}>
+            Pendidikan
+          </Text>        
+          </TouchableOpacity>
 
         <TouchableOpacity
           style={styles.navButton}
@@ -308,4 +310,12 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#0f172a',
   },
+
+  smallNavText: {
+  color: '#fff',
+  fontSize: 10,
+  marginTop: 5,
+  fontWeight: 'bold',
+  textAlign: 'center',
+},
 });

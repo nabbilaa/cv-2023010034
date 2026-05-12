@@ -62,7 +62,9 @@ export default function Biodata() {
           onPress={() => router.push('/pendidikan')}
         >
           <Ionicons name="school" size={20} color="white" />
-          <Text style={styles.navText}>Pendidikan</Text>
+          <Text style={styles.smallNavText}>
+  Pendidikan
+</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
@@ -501,4 +503,12 @@ const styles = StyleSheet.create({
     color: '#1e293b',
     lineHeight: 26,
   },
+  smallNavText: {
+  color: '#fff',
+  fontSize: 9,
+  marginTop: 5,
+  fontWeight: 'bold',
+  textAlign: 'center',
+},
+
 });

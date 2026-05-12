@@ -28,7 +28,7 @@ export default function Index() {
         </Text>
 
         <Text style={styles.name}>
-          Nabila Istighfareta Agwitanty
+           Nabila Istighfareta Agwitanty
         </Text>
 
         <Text style={styles.prodi}>

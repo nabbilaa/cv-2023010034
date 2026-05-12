@@ -1,15 +1,15 @@
 import React from 'react';
 import {
-  View,
-  Text,
-  StyleSheet,
-  ScrollView,
-  TouchableOpacity,
   Image,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
 } from 'react-native';
 
-import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
+import { router } from 'expo-router';
 
 export default function Skill() {
   return (
@@ -50,7 +50,9 @@ export default function Skill() {
           onPress={() => router.push('/pendidikan')}
         >
           <Ionicons name="school" size={20} color="white" />
-          <Text style={styles.navText}>Pendidikan</Text>
+          <Text style={styles.smallNavText}>
+            Pendidikan
+          </Text>
         </TouchableOpacity>
 
         <TouchableOpacity
@@ -58,7 +60,9 @@ export default function Skill() {
           onPress={() => router.push('/skill')}
         >
           <Ionicons name="code-slash" size={20} color="white" />
-          <Text style={styles.navText}>Skill</Text>
+          <Text style={styles.smallNavText}>
+            Skill
+          </Text>
         </TouchableOpacity>
 
       </View>
@@ -492,4 +496,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#2563eb',
   },
+
+  smallNavText: {
+  color: '#fff',
+  fontSize: 9,
+  marginTop: 5,
+  fontWeight: 'bold',
+  textAlign: 'center',
+},
 });
